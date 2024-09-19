@@ -1,0 +1,31 @@
+
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="{% static 'style1.css' %}" type="text/css"/>
+      
+</head>
+<body>
+    <div class="topnav" >
+        <a href="../homepage">Home </a>
+        <a href="../aboutpage">About</a>
+        <a href="../p_loginpage">Patient-Login</a>
+        <a href="../d_loginpage">Doctor-Login</a>
+
+      </div>
+      
+<br>
+<br>
+
+  {% block body%}
+  
+  {% endblock%}
+
+<br> 
+<br>
+</body>
+</html>

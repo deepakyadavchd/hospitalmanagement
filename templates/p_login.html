@@ -1,0 +1,20 @@
+{% extends "master.html"%}
+
+
+{% load static %}
+
+{% block body%}
+
+<br>
+{{error}}
+<form method="post" id="formid">
+    {% csrf_token %} 
+<br>
+patient_Id<input type="text" placeholder="" name="txtuserid"><br><br>
+Password<input type="password" placeholder="" name="txtpassword"><br><br>
+
+<button type="submit" name="btnlogin">Login </button><br>
+</form>
+
+
+{% endblock%}
