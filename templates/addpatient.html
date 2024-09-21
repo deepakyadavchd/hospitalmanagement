@@ -1,26 +1,19 @@
 {% extends "master2.html" %}
 {% load static %}
 
-
-
 {% block body %}
 <br>
-<br>
 <center>
-<h2> Add-patient-Here </h2>
+<h2>  Add Patient </h2>
 </center>
-<br>
-<br>
-<form method="post" id="addinform">
+<form method="post" id="formid">
 {% csrf_token %}
-<br>
-<br>
-Firstname<input type="text" name="txtfname"  placeholder="Enter Firstname" required><br><br>
-Lastname<input type="text" name="txtlname"  placeholder="Enter Lastname" required><br><br>
-Email-id<input type="text" name="txtemail"  placeholder="Enter Email-id" required><br><br>
-Password<input type="password" name="txtpassword"  placeholder="Enter Password" required><br><br>
-Confirm-Password<input type="password" name="txtconfirm"  placeholder="Enter Confirm-Password" required><br><br>
-<button type="submit" value="btnvalue" name="addbtn"> Add </button><br>
+Firstname <input type="text" name="txtfname"  placeholder="Enter Firstname" required><br><br>
+Lastname <input type="text" name="txtlname"  placeholder="Enter Lastname" required><br><br>
+Email-id <input type="text" name="txtemail"  placeholder="Enter Email-id" required><br><br>
+Password <input type="password" name="txtpassword"  placeholder="Enter Password" required><br><br>
+Confirm-Password <input type="password" name="txtconfirm"  placeholder="Enter Confirm-Password" required><br><br>
+<button type="submit" value="btnvalue" name="addbtn"> Add Patient </button><br>
 
 </form>
 {{msg}}

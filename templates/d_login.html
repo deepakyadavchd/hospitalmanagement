@@ -1,19 +1,18 @@
 {% extends "master.html"%}
 
-
 {% load static %}
 
 {% block body%}
 
-<br>
-{{msg}}
-<form method="post" id="formid">
-    {% csrf_token %} 
-<br>
-Doctor_Id<input type="text" placeholder="Enter Your Id" name="txtid"><br><br>
-Password<input type="password" placeholder="Enter Your Password" name="txtpassword"><br><br>
-<button type="submit" name="btnlogin">Login </button><br>
-</form>
 {{error}}
+<br>
+<form method="POST"  id="formid">
+    {% csrf_token %}
+<br>    
+Username <input type="text" name="txtid" placeholder="Enter Your Username"><br><br>
+Password <input type="password" name="txtpassword" placeholder="Enter Your Password"><br><br>
+<button type="submit" name="btnlogin" value="btnkivalue">Login</button>
+</form>
+<br>
 
 {% endblock%}

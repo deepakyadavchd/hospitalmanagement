@@ -134,17 +134,3 @@
   
 }
 
-
-#addinform{
-    
-  width: 100%;
-  border:solid;
-  background-color:cadetblue;
-  border-radius:20px;
-  margin-left: 6cm;
-  margin-top:40px ;
-  text-align:right;
-  font-size: x-large;
-  font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-  font-weight: 300;
-}
