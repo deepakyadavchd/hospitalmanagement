@@ -9,7 +9,9 @@ urlpatterns = [
     path('p_loginpage/', patientlogin),
     path('d_loginpage/',drlogin),
     path('dlogout/', logoutview),
-    path('addpage/', addpatient)
+    path('plogout/', poutview),
+    path('addpage/', addpatient), 
+    path('history/', htr)
 
 
 ]
