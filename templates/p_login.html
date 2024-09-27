@@ -5,16 +5,13 @@
 
 {% block body%}
 
-<br>
 {{error}}
 <form method="post" id="formid">
     {% csrf_token %} 
 <br>
 patient_Id <input type="text" placeholder="Enter Your Id" name="txtuserid"><br><br>
 Password <input type="password" placeholder="Enter Your password" name="txtpassword"><br><br>
-
 <button type="submit" name="btnlogin" value="btnkivalue">Login </button><br>
 </form>
-
 
 {% endblock%}
