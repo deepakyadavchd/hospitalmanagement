@@ -13,5 +13,4 @@ urlpatterns = [
     path('addpage/', addpatient), 
     path('history/', htr)
 
-
 ]
