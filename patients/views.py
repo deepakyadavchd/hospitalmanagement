@@ -30,12 +30,9 @@ def patientlogin(request):
            return render(request, 'p_login.html', context=data)
     return render(request, 'p_login.html')
 
-
-
 def poutview(request):
     logout(request)
     return redirect("../p_loginpage")
-
 
 def drlogin(request):
     if(request.POST.get("btnlogin")):
@@ -81,6 +78,5 @@ def addpatient(request):
         
     return render(request,'addpatient.html')
     
-
 def htr(request):
     return render(request,'history.html')
